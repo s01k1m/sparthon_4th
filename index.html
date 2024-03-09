@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet" />
+  <script type="text/javascript" src="./main.js"></script>
+  <title>스파르타톤 4기 버킷리스트 만들기</title>
+</head>
+
+<body class="bg">
+  <!-- 헤드 -->
+  <h1>SPARTHON Bucket List</h1>
+
+  <div id="music_player">
+    <audio controls volume="0.5">
+      <source src="./assets/sounds/bgm.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+  <div>
+    <div>꿈을 꾸는 것이 아닌, 이루는 것이다.</div>
+    <form>
+      <input type="text" id="text_input" placeholder="내용을 입력하세요">
+      <button type="button" id="submit_btn" onclick="create_bucket()">
+        <img height="25px" src="./assets/images/Bucket_Plus.png">
+      </button>
+    </form>
+  </div>
+  <!-- 버킷리스트  -->
+  <ul id="bucketList">
+
+  </ul>
+    <!-- Canvas -->
+  <canvas id="bgCanvas"></canvas>
+
+  <script src="./canvas.js"></script>
+  </body>
+
+</html>

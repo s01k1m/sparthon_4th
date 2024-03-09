@@ -1,0 +1,144 @@
+.bg {
+  background-image: url("./assets/images/벚꽃배경1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-color: #141617;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#bgCanvas{
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+h1{
+  color: pink;
+}
+
+#music_player{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: auto;
+  height: 50px;
+}
+
+audio {
+  width: 200px; /* 너비 조절 */
+  height: 100px; /* 높이 조절 */
+}
+
+form{
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+#text_input{
+  width: 200px;
+  height: 22px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+#submit_btn{
+  background-color: transparent;
+  padding: 0;
+  border:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+ul#bucketList {
+  display: block;
+  list-style-type: none;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+li {
+  flex: auto;
+  display: list-item;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 1; 
+  position: relative;
+  background-image:url("./assets/images/Bucket01.png");
+  background-size: cover;
+  width: 100px;
+  height:100px;
+}
+
+li:nth-child(2n){
+  background-image:url("./assets/images/Bucket02.png");
+  color:black;
+}
+
+li:nth-child(3n){
+  background-image:url("./assets/images/Bucket03.png");
+  color:black;
+}
+
+li:nth-child(4n){
+  background-image:url("./assets/images/Bucket04.png");
+  color:black;
+}
+
+li:nth-child(5n){
+  background-image:url("./assets/images/Bucket05.png");
+}
+
+li:nth-child(6n){
+  background-image:url("./assets/images/Bucket06.png");
+}
+
+li.done::after {
+  background-image: url("./assets/images/Done.png");
+  background-size: 50% 50%;
+background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto; 
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%; 
+  /* 높이너비 핈수 */
+  /* display: inline-block;
+
+}
+}
+li.undone::after {
+  content: "";
+  /* background-image: url("./assets//Done.png") */
+}
+
+
+.item_delete_button{
+  background-image:url("./assets/images/Delete.png");
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top:10px;
+  right: 10px;
+}
